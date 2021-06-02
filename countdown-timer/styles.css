@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  background: url(./pexels-photo-5485112.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#countdown {
+  font-size: 30px;
+}
+
+#festival {
+  font-size: 80px;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-container > div {
+  margin: 15px;
+  width: 220px;
+  height: 220px;
+  font-size: 40px;
+  background-color: rgba(211, 207, 207, 0.104);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
