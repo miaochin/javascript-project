@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #183c54;
+  height: 100vh;
+  width: 100vw;
+  font-size: 18px;
+  background-color: #ebe7e7b1;
+}
+
+.app-interface {
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  box-shadow: 1px 1px 1px #c2dced;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.app-interface > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 4px;
+  border: 1px solid rgb(223, 217, 217);
+}
+
+.app-interface > div > h3 {
+  margin: 10px 4px;
+}
+
+.app-interface > div > p {
+  width: 400px;
+}
+
+.question-part {
+  height: 40%;
+  text-align: center;
+}
+
+.option-part {
+  height: 60%;
+}
+
+li {
+  background-color: whitesmoke;
+  margin: 10px;
+  list-style-type: none;
+  width: 400px;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+li div {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
+}
+
+label {
+  margin: 0px 4px;
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 8px;
+  top: -32px;
+  left: -25px;
+}
+
+button {
+  display: block;
+  color: #183c54;
+  border: none;
+  font-size: 16px;
+  width: 180px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+button:hover {
+  background-color: #a1bce4;
+  color: whitesmoke;
+  cursor: pointer;
+  z-index: 1;
+}

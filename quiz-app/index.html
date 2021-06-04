@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="app-interface">
+      <div class="question-part" id="result">
+        <h3>Question <span id="question-ordinal">1</span><span>/5</span></h3>
+        <p id="question">What is the most popular programming language?</p>
+      </div>
+      <div class="option-part" id="reloadpage">
+        <ul>
+          <li>
+            <div>
+              <input type="radio" id="a" name="option" value="A" />
+              <label id="A" for="a">
+                <span>Python</span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <input type="radio" id="b" name="option" value="B" />
+              <label id="B" for="b">
+                <span>Java</span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <input type="radio" id="c" name="option" value="C" />
+              <label id="C" for="c">
+                <span>C#</span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <input type="radio" id="d" name="option" value="D" />
+              <label id="D" for="d">
+                <span>Swift</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>
