@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.header {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.tdee-calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 5px 9px 15px -8px #7a7a7a;
+  background-color: #f3e1dd;
+}
+
+.content-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.input-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  margin: 5px;
+}
+
+.result {
+  width: 40%;
+  height: 65%;
+  margin: 5px;
+  background: whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.add-result {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 35%;
+}
+
+.main-result {
+  height: 50%;
+}
+
+.add-result > div {
+  margin: 0px 10px;
+}
+
+.gender-opt {
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+.title {
+  color: rgb(25, 95, 60);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+#age,
+#height,
+#weight {
+  width: 80%;
+  height: 3px;
+  margin-left: 15px;
+}
+
+.activity {
+  font-size: 14px;
+}
+
+.num-data {
+  font-size: 25px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+input {
+  cursor: pointer;
+}

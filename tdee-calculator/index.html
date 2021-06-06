@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>TDEE Calculator</title>
+  </head>
+  <body>
+    <div class="tdee-calculator">
+      <div class="header"><p>TDEE Calculator</p></div>
+      <div class="content-part">
+        <div class="input-data">
+          <div class="gender">
+            <p class="title">Gender</p>
+            <div style="text-align: center">
+              <div class="gender-opt">
+                <input type="radio" name="gender" id="male" value="0" />
+                <label for="male">Male</label>
+              </div>
+              <div class="gender-opt">
+                <input type="radio" name="gender" id="female" value="1" checked />
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="title" for="age">Age</label>
+            <p id="age-text" class="num-data">24</p>
+            <input type="range" id="age" min="0" max="110" step="1" value="24" />
+          </div>
+          <div>
+            <label class="title" for="height">Height</label>
+            <p><span id="height-text" class="num-data">158</span>cm</p>
+            <input type="range" id="height" min="0" max="220" step="1" value="158" />
+          </div>
+          <div>
+            <label class="title" for="weight">Weight</label>
+            <p><span id="weight-text" class="num-data">50</span>kg</p>
+            <input type="range" id="weight" min="0" max="400" step="1" value="50" />
+          </div>
+          <div class="activity">
+            <label class="title" for="">Activity</label>
+            <div style="padding-left: 20px">
+              <input type="radio" name="activity" id="act1" value="0" checked />
+              <label for="act1">Sedentary (office job)</label>
+              <br />
+              <input type="radio" name="activity" id="act2" value="1" />
+              <label for="act2">Light Exercise (1-2 days/week)</label>
+              <br />
+              <input type="radio" name="activity" id="act3" value="2" />
+              <label for="act3">Moderate Exercise (3-5 days/week)</label>
+              <br />
+              <input type="radio" name="activity" id="act4" value="3" />
+              <label for="act4">Heavy Exercise (6-7 days/week)</label>
+              <br />
+              <input type="radio" name="activity" id="act5" value="4" />
+              <label for="act5">Athlete (2x /day) </label>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="main-result">
+            <p>Your result</p>
+            <p><span id="tdee" style="font-size: 80px; color: #10496a; margin-right: 8px">1306</span><span style="position: fixed; top: 370px; right: 390px">calories</span></p>
+          </div>
+          <div class="add-result">
+            <div>
+              <p style="position: fixed; top: 420px; right: 600px" class="title">BMI</p>
+              <p style="position: fixed; top: 444px; right: 540px" id="bmi" class="num-data">20.0</p>
+            </div>
+            <div>
+              <p style="position: fixed; top: 420px; right: 480px" class="title">BMR</p>
+              <p><span style="position: fixed; top: 444px; right: 420px" id="bmr" class="num-data">1567</span><span style="position: fixed; right: 355px; top: 455px">calories</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
