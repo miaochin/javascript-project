@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ffd32a;
+  opacity: 0.4;
+  margin: 30px 20px;
+  font-size: 70px;
+}
+
+#tbd,
+#complete {
+  padding: 4px 10px;
+  border: none;
+  font-size: 20px;
+  width: 300px;
+  height: 45px;
+}
+
+#tbd {
+  background: #ffd32a;
+  color: black;
+}
+
+#complete {
+  background: #57606f;
+  color: whitesmoke;
+}
+
+ul {
+  width: 600px;
+  border: 1px solid rgb(235, 227, 227);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(235, 227, 227);
+  min-height: 35px;
+  font-size: 18px;
+  padding: 7px 0px 7px 3px;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+i {
+  padding: 0px 10px;
+  margin: 0px 2px;
+  font-size: 17px;
+  background: transparent;
+}
+
+li > p {
+  max-width: 520px;
+  min-width: 520px;
+  white-space: initial;
+  word-wrap: break-word;
+}
+
+li > div {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+li button {
+  background: transparent;
+  border: none;
+}
+
+.fa-check:hover {
+  color: #44bd32;
+}
+
+.fa-times:hover {
+  color: #c23616;
+}
+
+.fa-undo:hover {
+  color: #3867d6;
+}
+
+#addtodo {
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  background: #f8d440;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#addtodo i {
+  color: black;
+}
+
+#todotext {
+  width: 400px;
+  min-height: 30px;
+  font-size: 15px;
+}
+
+.tbd-list {
+  background: #ffd32a;
+  color: black;
+}
