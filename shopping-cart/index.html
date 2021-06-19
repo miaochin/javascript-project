@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Get some vases today!</h1>
+    <div class="product">
+      <div class="item">
+        <img src="./image/pexels-photo-2146109.jpeg" alt="vase a" />
+        <div class="spec">
+          <p>Vase A</p>
+          <i>$30.51</i> <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./image/pexels-photo-2746155.jpeg" alt="vase b" />
+        <div class="spec">
+          <p>Vase B</p>
+          <i>$28.88</i> <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./image/pexels-photo-4207892.jpeg" alt="vase c" />
+        <div class="spec">
+          <p>Vase C</p>
+          <i>$40.76</i> <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+            <td>Remove</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="total">Total:<i id="total-num">$00.00</i></p>
+    </div>
+    <button id="purchase">Purchase</button>
+    <script src="./app.js"></script>
+  </body>
+</html>

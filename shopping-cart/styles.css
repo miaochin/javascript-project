@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #efedf5;
+}
+
+h1 {
+  margin: 30px 0px;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+  margin: 20px 0px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.product {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.product img {
+  width: 270px;
+  height: 320px;
+}
+
+.item {
+  margin: 5px 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 39px -3px #a6b0a8;
+}
+
+.spec {
+  padding: 5px 10px 15px 10px;
+  position: relative;
+}
+
+.add-cart {
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+  padding: 5px 18px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  background: #dad4ef;
+}
+
+.item p {
+  font-size: 20px;
+  margin: 5px 0px 20px 0px;
+}
+
+.item i {
+  padding-bottom: 10px;
+}
+
+.cart {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.cart img {
+  width: 50px;
+  height: 70px;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+thead {
+  font-size: 25px;
+}
+
+tbody {
+  font-size: 20px;
+}
+
+td {
+  width: 180px;
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  width: 40px;
+  text-align: center;
+}
+
+.cart-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete {
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  color: rgb(189, 22, 22);
+  cursor: pointer;
+  outline: none;
+}
+
+#total {
+  font-size: 28px;
+  position: absolute;
+  right: 5px;
+  bottom: -80px;
+}
+
+#purchase {
+  font-size: 25px;
+  border-radius: 10px;
+  overflow: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 10px 40px;
+  margin-bottom: 200px;
+  background: #dad4ef;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
