@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #e9edf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-interface {
+  background: #6089e8;
+  color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  height: 125px;
+  padding: 80px 10px 0px 10px;
+  text-align: end;
+  border: 0.02px solid rgb(209, 205, 205);
+  font-size: 30px;
+  overflow: scroll;
+}
+
+.row {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  width: 87.5px;
+  height: 100%;
+  outline: none;
+  color: #3a6ada;
+  background: #9db2e1;
+  border: 0.02px solid rgb(209, 205, 205);
+}
+
+i {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.two-space {
+  width: 175px;
+}
+
+.third-space {
+  width: 262.5px;
+}
+
+.number-dot {
+  background: whitesmoke;
+  color: black;
+}
+
+.fas {
+  font-size: 18px;
+}
+
+button:hover {
+  background: #c3ccdf;
+}
